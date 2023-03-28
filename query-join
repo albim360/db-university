@@ -4,3 +4,9 @@ INNER JOIN `degrees`
 ON `degrees`.`id` = `students`.`degree_id`
 WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
 
+2. SELECT *
+FROM `departments`
+INNER JOIN `degrees`
+ON `degrees`.`department_id`= `departments`.`id`
+WHERE `departments`.`name` = 'Dipartimento di Neuroscienze';
+
