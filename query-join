@@ -10,3 +10,9 @@ INNER JOIN `degrees`
 ON `degrees`.`department_id`= `departments`.`id`
 WHERE `departments`.`name` = 'Dipartimento di Neuroscienze';
 
+3. SELECT *
+FROM courses
+JOIN course_teacher ON courses.id = course_teacher.course_id
+JOIN teachers ON teachers.id = course_teacher.teacher_id
+WHERE teachers.name = 'Fulvio' AND teachers.name = 'Fulvio' AND teachers.surname = 'Amato';
+
